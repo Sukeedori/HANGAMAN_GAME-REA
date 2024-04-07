@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego del Ahorcado-REA desarrollado con HTML, CSS y JavaScript.">
+    <link rel="icon" type="image/png" href="images/hangman_icon.png">
+    <title>Ahorcado-REA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="game-modal">
+        <div class="content">
+            <img src="images/victory.gif" alt="gif">
+            <h4>Juego Finalizado</h4>
+            <p>La palabra correcta es: <b>rainbow</b></p>
+            <button class="play-again">Jugar de nuevo <i class="fas fa-angle-double-right"></i></button>
+            <button class="play-again">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>juego del ahorcado</h1>
+        </div>
+
+        <div class="game-box">
+            <ul class="word-display">
+                <li class="letter"></li>
+                <li class="letter guessed">a</li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+            </ul>
+
+            <h4 class="hint-text">
+                Concepto:
+                <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, omnis.</b>
+            </h4>
+            <h4 class="guesses-text">
+                Selecciones Incorrectas:
+                <b> 0 / 6</b>
+            </h4>
+
+            <div class="keyboard">
+                <button>a</button> <button>b</button>
+                <button>c</button> <button>d</button>
+                <button>e</button> <button>f</button>
+                <button>g</button> <button>h</button>
+                <button>i</button> <button>j</button>
+                <button>k</button> <button>l</button>
+                <button>m</button> <button>n</button>
+                <button>ñ</button> <button>o</button>
+                <button>p</button> <button>q</button>
+                <button>r</button> <button>s</button>
+                <button>t</button> <button>u</button>
+                <button>v</button> <button>w</button>
+                <button>x</button> <button>y</button>
+                <button>z</button> 
+            </div>
+
+            <button class="end">Finalizar <i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+
+<!--JavaScript-->
+    <script src="script.js"></script>
+</body>
+</html>

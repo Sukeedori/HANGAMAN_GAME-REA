@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css" />
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
@@ -21,7 +23,7 @@
             <h4>Juego Finalizado</h4>
             <p>La palabra correcta es: <b>rainbow</b></p>
             <button class="play-again">Jugar de nuevo <i class="fas fa-angle-double-right"></i></button>
-            <button class="play-again">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
+            <button class="siguiente">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
         </div>
     </div>
 
@@ -32,16 +34,7 @@
         </div>
 
         <div class="game-box">
-            <ul class="word-display">
-                <li class="letter"></li>
-                <li class="letter guessed">a</li>
-                <li class="letter"></li>
-                <li class="letter"></li>
-                <li class="letter"></li>
-                <li class="letter"></li>
-                <li class="letter"></li>
-                <li class="letter"></li>
-            </ul>
+            <ul class="word-display"></ul>
 
             <h4 class="hint-text">
                 Concepto:
@@ -52,29 +45,10 @@
                 <b> 0 / 6</b>
             </h4>
 
-            <div class="keyboard">
-                <button>a</button> <button>b</button>
-                <button>c</button> <button>d</button>
-                <button>e</button> <button>f</button>
-                <button>g</button> <button>h</button>
-                <button>i</button> <button>j</button>
-                <button>k</button> <button>l</button>
-                <button>m</button> <button>n</button>
-                <button>ñ</button> <button>o</button>
-                <button>p</button> <button>q</button>
-                <button>r</button> <button>s</button>
-                <button>t</button> <button>u</button>
-                <button>v</button> <button>w</button>
-                <button>x</button> <button>y</button>
-                <button>z</button> 
-            </div>
-
-            <button class="end">Finalizar <i class="fas fa-angle-double-right"></i></button>
+            <div class="keyboard"> </div>
+            <!--<button class="siguiente">siguiente <i class="fas fa-angle-double-right"></i></button>-->
         </div>
     </div>
 
-
-<!--JavaScript-->
-    <script src="script.js"></script>
 </body>
 </html>

@@ -97,7 +97,9 @@ padding: 0 15px;
   border-radius: 4px;
 }
 
-.end{
+/*
+---boton siguiente---
+.siguiente{
   display: block;
   margin: 0 auto;
   margin-top: 15px;
@@ -112,6 +114,18 @@ padding: 0 15px;
   border: 3px solid #0C4093;
 }
 
+*/
+
+.keyboard button[disabled]{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/*eliminar para colocar el boton siguiente al container*/
+.keyboard{
+  margin-bottom: 35px;
+}
+
 /*----------------Mensaje Game Over---------------*/
 
 .game-modal{
@@ -120,10 +134,20 @@ padding: 0 15px;
   top: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  opacity: 0;
+  padding: 0 15px; /*Para el responsive*/
+  pointer-events: none;
+  z-index: 999;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(218, 56, 66, 0.6);
+  transition: opacity 0.4s ease;
+}
+
+.game-modal.show{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .game-modal .content{
@@ -154,7 +178,7 @@ padding: 0 15px;
   font-weight: bold;
 }
 
-.game-modal .play-again{
+.game-modal button{
   font-size: 11.5px;
   border: none;
   border-radius: 0.3em;

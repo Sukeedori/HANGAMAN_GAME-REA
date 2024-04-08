@@ -16,23 +16,20 @@
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
-
     <div class="game-modal">
         <div class="content">
             <img src="images/victory.gif" alt="gif">
             <h4>Juego Finalizado</h4>
             <p>La palabra correcta es: <b>rainbow</b></p>
-            <button class="play-again">Jugar de nuevo <i class="fas fa-angle-double-right"></i></button>
-            <button class="siguiente">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
+            <div class="btns">
+                <button class="play-again">Jugar de nuevo <i class="fas fa-angle-double-right"></i></button>
+                <button class="siguiente">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
+            </div>
+
         </div>
     </div>
 
     <div class="container">
-        <div class="hangman-box">
-            <img src="images/hangman-0.svg" alt="hangman-img">
-            <h1>juego del ahorcado</h1>
-        </div>
-
         <div class="game-box">
             <ul class="word-display"></ul>
 
@@ -48,7 +45,11 @@
             <div class="keyboard"> </div>
             <!--<button class="siguiente">siguiente <i class="fas fa-angle-double-right"></i></button>-->
         </div>
-    </div>
 
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>juego del ahorcado</h1>
+        </div>
+    </div>
 </body>
 </html>

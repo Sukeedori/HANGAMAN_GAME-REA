@@ -113,7 +113,6 @@ padding: 0 15px;
   color: #811D0C;
   border: 3px solid #0C4093;
 }
-
 */
 
 .keyboard button[disabled]{
@@ -213,5 +212,25 @@ button:hover{
 
   .word-display{
     margin-top: 60px;
+  }
+
+  .hangman-box {
+    order: 1; 
+  }
+
+  .game-box {
+    order: 2; 
+  }
+}
+
+@media (max-width: 437px){
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .btns button {
+    margin-bottom: 10px;
   }
 }

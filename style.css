@@ -17,10 +17,11 @@ body{
 
 .container{
   width: 950px;
-  background: #FFF;
+  background: #F4ECE8;
   display: flex;
   align-items: flex-end;
-  padding: 80px 30px;
+  padding: 60px 30px;
+  border: 7px solid #585EFF;
   border-radius: 10px;
 }
 
@@ -34,6 +35,7 @@ padding: 0 15px;
 
 .hangman-box h1{
   font-size: 1.45em;
+  color: #DA3842;
   margin-top: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -72,8 +74,8 @@ padding: 0 15px;
   margin-bottom: 20px;
 }
 
-.game-box .guesses-text b{
-  color: red;
+.game-box .guesses-text strong{
+  color: #DA3842;
 }
 
 .game-box .keyboard{
@@ -85,9 +87,9 @@ padding: 0 15px;
 }
 
 .game-box .keyboard button{
-  background: yellowgreen;
-  color: #000;
-  font-weight: bold;
+  background: #F2D805;;
+  color: #123D1B;
+  font-weight: 900;
   width: 50px;
   height: 30px;
   border: none;
@@ -122,7 +124,7 @@ padding: 0 15px;
 
 /*eliminar para colocar el boton siguiente al container*/
 .keyboard{
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 /*----------------Mensaje Game Over---------------*/
@@ -159,8 +161,8 @@ padding: 0 15px;
 }
 
 .game-modal img{
-  max-width: 150px;
-  margin-bottom: 20px;
+  max-width: 200px;
+
 }
 
 .game-modal h4{
@@ -172,7 +174,7 @@ padding: 0 15px;
   margin: 15px 0 20px;
 }
 
-.game-modal p b{
+.game-modal p strong{
   color: green;
   font-weight: bold;
 }
